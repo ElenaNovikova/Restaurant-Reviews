@@ -6,27 +6,35 @@
 
 For this project, I had to convert a static webpage to a mobile-ready web application, taking a static design that was lacking accessibility and convert it to be responsive on a range of different sized displays, at the same time making it accessible for screen readers use. For creating a seamless offline experience with the site I used service worker.
 
-### Specification
+### How to run the app
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+You can open Live project [here](https://elenanovikova.github.io/Restaurant-Reviews/). <br>
+<br> **OR** <br>
+1. Download/clone this project's repository from [here](https://github.com/ElenaNovikova/Restaurant-Reviews/).
 
-### What do I do from here?
+2. In project's folder, start up a simple HTTP server to serve up the site files on your local computer.
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+3. With your server running, visit the site: `http://localhost:8000`.
 
 ## Leaflet.js and Mapbox:
 
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/).
 
 ### Note about ES6
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. Note, that ES6 code will run only in browsers that have support of it, older browsers and devices most likely do not support ES6, therefore the Restaurant Reviews app will not work properly on it. Please be sure to get it updated.
 
+## Licensing
+*Copyright 2018 Elena Novikova* <br>
+Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:
 
+http://www.osedu.org/licenses/ECL-2.0
+
+	Unless required by applicable law or agreed to in writing,
+	software distributed under the License is distributed on an "AS IS"
+	BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+	or implied. See the License for the specific language governing
+	permissions and limitations under the License.
 
