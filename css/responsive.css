@@ -1,0 +1,150 @@
+/*** ---------------------------------
+     Breakpoints
+--------------------------------- ***/
+
+/*** Small Sized Mobiles ***/
+
+/*@media screen and (min-width: 284px) and (max-width: 319px) {*/
+@media screen and (max-width: 319px) {
+    .wrapper {
+        max-width: 319px;
+    }
+    nav h1 a {
+        letter-spacing: 4px;
+        padding-left: 5px;
+        font-size: 12pt;
+    }
+    #map-container {
+        margin-top: 10.5em;
+    }
+    #restaurants-list .restaurant-img {
+        max-width: 220px;
+        min-height: auto;
+    }
+    #restaurants-list li {
+        min-height: auto;
+    }
+    #restaurants-list {
+        padding-bottom: 20px;
+    }
+}
+
+/*@media screen and (max-width: 480px) {
+@media screen and (max-width: 548px) { */
+@media screen and (min-width: 320px) and (max-width: 548px) {
+    nav h1 a {
+        /*padding-left: 15px;*/
+    }
+    .filter-options h2 {
+        display: none;
+    }
+    #restaurant-hours td {
+        display: table-header-group;
+    }
+}
+
+/*** Minor Breakpoints ***/
+
+@media screen and (min-width: 549px) and (max-width: 598px) {
+    .filter-options h2 {
+        margin-left: 7px;
+        margin-right: 0px;
+        float: left;
+        padding-top: 14px;
+        font-size: 11pt;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #restaurants-list li {
+        max-width: 100%;
+    }
+    .inside #map-container {
+        position: static;
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 1em;
+    }
+    .inside .wrapper {
+        width: 100%;
+    }
+}
+
+/*** Medium Sized Devices ***/
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .inside #map-container {
+        left: 400px;
+        width: calc(100% - 400px);
+    }
+    .inside .wrapper {
+        width: 400px;
+    }
+    #restaurant-hours td {
+        display: table-header-group;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .wrapper {
+        height: 3.5em;
+    }
+
+    nav {
+        height: 5em;
+    }
+
+    nav h1 {
+    		padding-top: 10px;
+    }
+
+    /*#map-container {
+        margin-top: 6.3em;
+    }*/
+
+    .filter-options {
+        justify-content: center;
+        margin-top: -10px;
+    }
+    .filter-options select {
+        margin: 0.5em;
+    }
+    #restaurants-list {
+        justify-content: center;
+        padding-top: 5px;
+    }
+    /*#map {
+        height: 40vh;
+    }*/
+}
+
+/*** Large Devices ***/
+
+@media screen and (min-width: 1200px) and (max-width: 1600px)  {
+    #restaurants-list li:nth-of-type(3n+0) {
+        /*margin-right: 0;*/
+    }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1920px)  {
+    #restaurants-list li:nth-of-type(4n+0) {
+        margin-right: 0;
+    }
+    #restaurant-img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+/*** Extra Sized Devices ***/
+
+@media screen and (min-width: 1921px) {
+    #restaurants-list li:nth-of-type(5n+0) {
+        margin-right: 0;
+    }
+    #restaurant-img {
+        width: 400px;
+        height: 400px;
+    }
+}
