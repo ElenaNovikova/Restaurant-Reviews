@@ -90,7 +90,6 @@ header {
 		font-size: 8pt;
 		letter-spacing: 1px;
 		padding: 25px;
-		padding-left: 45px;
 		text-align: center;
 		text-transform: uppercase;
 }
@@ -219,9 +218,9 @@ nav h1 a {
 		width: 300px;
 }
 
-#restaurants-list li:last-child {
+/*#restaurants-list li:last-child {
     margin-left: 30px;
-}
+}*/
 
 #restaurants-list .restaurant-img {
 		background-color: #ccc;
