@@ -105,8 +105,19 @@
 }
 
 @media screen and (min-width: 452px) and (max-width: 640px) {
+    nav h1 a {
+        padding-left: 3px;
+        letter-spacing: 6px;
+        font-size: 13pt;
+    }
+    .filter-options {
+        display: flex;
+    }
     #restaurants-list li {
-        max-width: 100%;
+        width: 450px;
+    }
+    #restaurants-list li a {
+        font-size: 14pt;
     }
     .inside #map-container {
         position: static;
@@ -121,8 +132,17 @@
 
 /*** Medium Sized Devices ***/
 
-/*@media screen and (min-width: 992px) and (max-width: 1199px) {*/
-@media screen and (min-width: 641px) and (max-width: 1199px) {
+@media screen and (min-width: 641px) and (max-width: 826px) {
+    #restaurants-list li {
+        width: 520px;
+    }
+    #restaurants-list .restaurant-img {
+        display: block;
+        margin: 0;
+        max-width: 100%;
+        min-height: 248px;
+        min-width: 100%;
+    }
     .inside #map-container {
         left: 400px;
         width: calc(100% - 400px);
@@ -182,7 +202,7 @@
     }
     #restaurant-img {
         width: 280px;
-        height: 280px;
+        height: auto;
     }
 }
 
