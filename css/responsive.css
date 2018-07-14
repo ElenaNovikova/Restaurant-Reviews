@@ -85,7 +85,7 @@
         margin-left: 7px;
         margin-right: 0px;
         padding-top: 14px;
-        font-size: 1.25em;
+        font-size: 1.1em;
         font-weight: normal;
     }
     .filter-options {
@@ -155,7 +155,7 @@
     }
 }
 
-/*@media screen and (max-width: 1199px) {
+@media screen and (min-width: 827px) and (max-width: 1199px) {
     .wrapper {
         height: 3.5em;
     }
@@ -186,20 +186,11 @@
     #map {
         height: 40vh;
     }
-}*/
+}
 
 /*** Large Devices ***/
 
-/*@media screen and (min-width: 1200px) and (max-width: 1600px)  {
-    #restaurants-list li:nth-of-type(3n+0) {
-        margin-right: 0;
-    }
-}*/
-
-@media screen and (min-width: 1601px) and (max-width: 1920px)  {
-    #restaurants-list li:nth-of-type(4n+0) {
-        margin-right: 0;
-    }
+@media screen and (min-width: 1200px) and (max-width: 1920px)  {
     #restaurant-img {
         width: 280px;
         height: auto;
@@ -209,9 +200,6 @@
 /*** Extra Sized Devices ***/
 
 @media screen and (min-width: 1921px) {
-    #restaurants-list li:nth-of-type(5n+0) {
-        margin-right: 0;
-    }
     #restaurant-img {
         width: 400px;
         height: auto;
