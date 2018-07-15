@@ -198,13 +198,20 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 
 }
-/* addMarkersToMap = (restaurants = self.restaurants) => {
-  restaurants.forEach(restaurant => {
-    // Add marker to the map
-    const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.map);
-    google.maps.event.addListener(marker, 'click', () => {
-      window.location.href = marker.url
-    });
-    self.markers.push(marker);
-  });
-} */
+
+/**
+ * Service Worker
+ */
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('./sw.js', {
+            scope: ''
+        })
+        .then(function(reg) {
+            // Registration was successful
+            console.log('Service Worker registered in scope ' + reg.scope);
+        }).catch(function(error) {
+            // Something went wrong - Registration failed
+            console.log('Sorry, Registration failed, ' + error);
+        });
+}
