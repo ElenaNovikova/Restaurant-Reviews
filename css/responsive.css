@@ -98,6 +98,9 @@
     #restaurants-list li a {
         font-size: 13pt;
     }
+    #restaurants-list p {
+        font-size: 16pt;
+    }
     #restaurants-list .restaurant-img {
         max-width: 300px;
         min-height: auto;
@@ -119,6 +122,9 @@
     #restaurants-list li a {
         font-size: 14pt;
     }
+    #restaurants-list p {
+        font-size: 16pt;
+    }
     .inside #map-container {
         position: static;
         width: 100%;
@@ -135,6 +141,9 @@
 @media screen and (min-width: 641px) and (max-width: 826px) {
     #restaurants-list li {
         width: 520px;
+    }
+    #restaurants-list p {
+        font-size: 16pt;
     }
     #restaurants-list .restaurant-img {
         display: block;
@@ -187,6 +196,9 @@
     #restaurants-list {
         justify-content: center;
         padding-top: 5px;
+    }
+    #restaurants-list p {
+        font-size: 16pt;
     }
     #map {
         height: 40vh;
