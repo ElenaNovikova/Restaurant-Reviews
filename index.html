@@ -7,6 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="FEND p6 - Restaurant Reviews Web App">
+        <meta name="keywords" content="Restaurant, review, food, dinner, restaurants near New York">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- Custom color browser branding -->
         <meta name="theme-color" content="#ffe007"/>
@@ -37,16 +38,16 @@
 
             <!-- Beginning nav -->
             <nav class="wrapper">
-                <div class="page-title">
+                <div class="page-title" aria-label="Restaurant Reviews page header">
                     <h1><a href="./">Restaurant Reviews</a></h1>
                 </div>
                 <!-- Beginning filter -->
-                <div class="filter-options">
+                <div class="filter-options" tabindex="0">
                     <h2>Filter Results</h2>
-                    <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+                    <select id="neighborhoods-select" aria-label="Filter selection by neighborhood" tabindex="0" role="list" name="neighborhoods" onchange="updateRestaurants()">
                         <option value="all">All Neighborhoods</option>
                     </select>
-                    <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+                    <select id="cuisines-select" aria-label="Filter selection by cuisines type" tabindex="0" role="list" name="cuisines" onchange="updateRestaurants()">
                         <option value="all">All Cuisines</option>
                     </select>
                 </div>
@@ -61,11 +62,11 @@
         <main id="maincontent">
 
             <!-- Beginning map -->
-            <section id="map-container">
-                <div id="map"></div>
+            <section id="map-container" tabindex="-1">
+                <div id="map" role="application" aria-label="Map"></div>
             </section>
             <!-- End map -->
-            <ul id="restaurants-list"></ul>
+            <ul id="restaurants-list" aria-label="List of restaurants" tabindex="0" role="list"></ul>
 
         </main>
         <!-- End main -->
