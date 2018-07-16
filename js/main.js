@@ -146,6 +146,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
+  li.setAttribute('aria-label', 'Summary of ' + restaurant.neighborhood + '\'s ' + restaurant.name + ' restaurant');
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
@@ -168,6 +169,7 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.tabIndex = '0';
   li.append(more)
 
   return li;
@@ -187,7 +189,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 
-}
+};
 
 /**
  * Service Worker
@@ -204,4 +206,4 @@ if ('serviceWorker' in navigator) {
             // Something went wrong - Registration failed
             console.log('Sorry, Registration failed, ' + error);
         });
-}
+};
