@@ -36,6 +36,7 @@ const assetsToCache = [
     'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
     'https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js',
     'https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css',
+    'https://fonts.googleapis.com/css?family=PT+Sans+Narrow',
     'https://fonts.googleapis.com/css?family=Ubuntu:500'
 ];
 
