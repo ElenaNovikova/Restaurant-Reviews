@@ -271,7 +271,7 @@ nav h1 a {
 }
 
 .inside #map-container {
-		background: lightblue none repeat scroll 0 0;
+		/*background: lightblue none repeat scroll 0 0;*/
 		height: 100vh;
 		position: fixed;
 		right: 0;
@@ -293,7 +293,7 @@ nav h1 a {
 }
 
 #restaurant-name {
-		color: #f18200;
+		color: #257eca;
 		font-size: 20pt;
 		font-weight: 200;
 		letter-spacing: 1px;
@@ -402,8 +402,14 @@ p:nth-child(2) {
     border-radius: 6px;
 }
 
+#restaurant-hours {
+		width: 90%;
+}
+
 #restaurant-hours td {
 		color: #666;
+		font-size: 16pt;
+    text-align: center;
 }
 
 #restaurant-hours tr:nth-child(2n+0) {
@@ -411,5 +417,6 @@ p:nth-child(2) {
 }
 
 #restaurant-hours tr:nth-child(2n+1) {
+		/*background-color: #87c3d6d9;*/
 		background-color: lightblue;
 }
