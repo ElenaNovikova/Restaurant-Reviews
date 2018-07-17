@@ -111,6 +111,10 @@
         padding-top: 20px;
         padding-bottom: 10px;
     }
+    #restaurant-container {
+        border: none;
+        padding-top: 0px;
+    }
     .inside #map-container {
         position: static;
         width: 100%;
@@ -121,6 +125,11 @@
     }
     .inside #footer {
         width: initial;
+    }
+    #reviews-list p:nth-child(4) {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 10px;
     }
 }
 
@@ -196,21 +205,41 @@
         min-width: 100%;
     }
     .inside #map-container {
-        left: 400px;
-        width: calc(100% - 400px);
+        top: 17px;
+    }
+    .inside #footer {
+        width: 45%;
     }
     .inside .wrapper {
         width: 400px;
     }
     #restaurant-hours td {
         display: table-cell;
+        font-size: 15pt;
+    }
+    #restaurant-container {
+        padding: 140px 20px 30px;
+        width: 48%;
+    }
+    #restaurant-address {
+        font-size: 15pt;
+    }
+    #reviews-container {
+        padding: 30px 20px 30px;
+        width: 45%;
+    }
+    #reviews-list p:nth-child(4) {
+        padding: 10px 15px 10px 20px;
+    }
+    #reviews-list li p {
+        margin: 10px 5px 15px 10px;
     }
 }
 
 @media screen and (min-width: 827px) and (max-width: 1199px) {
-    .wrapper {
+    /*.wrapper {
         height: 3.5em;
-    }
+    }*/
 
     nav {
         height: 5em;
@@ -246,6 +275,32 @@
     #map {
         height: 40vh;
     }
+    .inside #map {
+        top: 20px;
+    }
+    .inside #footer {
+        width: 46%;
+    }
+    #restaurant-container,
+    #reviews-container {
+        width: 46%;
+    }
+    #reviews-container {
+        padding-bottom: 30px;
+    }
+    #reviews-list li {
+        padding: 0 10px 10px;
+    }
+    #reviews-list p:nth-child(4) {
+        padding: 20px 10px 20px 30px;
+    }
+    #breadcrumb li,
+    #restaurants-list li a {
+        font-size: 14pt;
+    }
+    #breadcrumb li a {
+        font-size: 1.05em;
+    }
 }
 
 /*** Large Devices ***/
@@ -260,7 +315,6 @@
 
 @media screen and (min-width: 1921px) {
     #restaurant-img {
-        width: 400px;
         height: auto;
     }
 }
