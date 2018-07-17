@@ -8,8 +8,8 @@
     .wrapper {
         max-width: 320px;
     }
-    nav h1 {
-        padding-top: 0px;
+    nav {
+        height: 4em;
     }
     nav h1 a {
         letter-spacing: 4px;
@@ -39,19 +39,50 @@
         padding-top: 10px;
         padding-bottom: 20px;
     }
+    .inside #map-container {
+        position: static;
+        width: 100%;
+        height: 40vh;
+    }
+    .inside #map {
+        top: -19px;
+    }
+    #breadcrumb {
+        padding-left: 10px;
+    }
+    #breadcrumb li {
+        font-size: 14pt;
+    }
+    .inside #footer {
+        width: initial;
+    }
+    #restaurant-container,
+    #reviews-container {
+        width: 85%;
+        border: none;
+        padding-top: 0px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
 }
 
 @media screen and (min-width: 321px) and (max-width: 380px) {
     .wrapper {
         max-width: 451px;
     }
+    nav {
+        height: 4em;
+    }
     nav h1 a {
         padding-left: 8px;
         letter-spacing: 4px;
         font-size: 13pt;
     }
+    #breadcrumb {
+        padding-left: 10px;
+    }
     #map-container {
-        margin-top: 13.1em;
+        margin-top: 10.6em;
     }
     #restaurant-hours td {
         display: table-header-group;
@@ -70,9 +101,32 @@
     #restaurants-list li {
         min-height: auto;
     }
+    .inside #map-container {
+        position: static;
+        width: 100%;
+        height: 40vh;
+    }
+    .inside #map {
+        top: -15px;
+    }
+    .inside #footer {
+        width: initial;
+    }
+    #restaurant-container,
+    #reviews-container {
+        width: 85%;
+        border: none;
+        padding-top: 5px;
+    }
+    #breadcrumb li {
+        font-size: 15pt;
+    }
 }
 
 @media screen and (min-width: 381px) and (max-width: 451px) {
+    nav {
+        height: 4em;
+    }
     nav h1 a {
         padding-left: 3px;
         letter-spacing: 6px;
@@ -131,9 +185,15 @@
         padding-right: 20px;
         margin-left: 10px;
     }
+    #breadcrumb li {
+        font-size: 16pt;
+    }
 }
 
 @media screen and (min-width: 452px) and (max-width: 640px) {
+    nav {
+        height: 4em;
+    }
     nav h1 a {
         padding-left: 3px;
         letter-spacing: 6px;
@@ -148,7 +208,7 @@
     #restaurant-hours td,
     #breadcrumb li,
     #restaurants-list li a {
-        font-size: 14pt;
+        font-size: 15pt;
     }
     #breadcrumb li a {
         font-size: 1.05em;
