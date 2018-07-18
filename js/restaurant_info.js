@@ -180,3 +180,20 @@ getParameterByName = (name, url) => {
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+/**
+ * Service Worker Registration
+ */
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('./sw.js', {
+            scope: ''
+        })
+        .then(function(reg) {
+            // Registration was successful
+            console.log('Service Worker registered in scope ' + reg.scope);
+        }).catch(function(error) {
+            // Something went wrong - Registration failed
+            console.log('Sorry, Registration failed, ' + error);
+        });
+};
