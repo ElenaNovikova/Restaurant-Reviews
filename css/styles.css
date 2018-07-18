@@ -293,7 +293,8 @@ nav h1 a {
 }
 
 #restaurant-name {
-		color: #257eca;
+		/*color: #257eca;*/
+		color: #333;
 		font-size: 20pt;
 		font-weight: 200;
 		letter-spacing: 1px;
